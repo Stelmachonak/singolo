@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: "Lato Regular", sans-serif;
   font-size: 12px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 *,
