@@ -56,12 +56,12 @@ ul {
 
 .portfolio__header {
   font-family: "Lato Black", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 17px;
   font-weight: 900;
   color: #666d89;
-  letter-spacing: 0.45px;
-  margin-top: 70px;
+  letter-spacing: 0.1px;
+  margin-top: 72px;
 }
 
 .portfolio__text {
@@ -71,32 +71,120 @@ ul {
   font-weight: 300;
   color: #767e9e;
   margin-top: 27px;
-  word-spacing: -2px;
+  word-spacing: -2.5px;
 }
 /* Navigation 
 ============================*/
 
+
 .nav__list {
-  display: flex;
+  display:flex;
   list-style: none;
-  padding-top: 10px;
+  margin-top: 10px;
   
 }
 
-.nav__link {
+.nav__link { 
+ margin-right: 10px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
   font-family: "Lato Regular" sans-serif;
   font-size: 12px;
-  line-height: 21px;
   font-weight: 400;
   color: #767e9e;
-  padding-right: 10px;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+  padding: 3px 6px 3px 6px ;
+  text-align: center;
+  cursor: pointer;
 }
 
-.button {
-  background-color: #2d303a;
-  text-align: center;
-  border-color: red;
-  border: 2px solid #F64C2B;
+a:hover {
+  color: #c5c5c5;
+  border: 1px solid #c5c5c5;
   border-radius: 5px;
+}
+
+.picture__slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img__item {
+ margin-top: 20px;
+ margin-bottom: -3px;
+}
+
+/* About Us
+============================*/
+
+
+
+.about__us {
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+.about__us__header {
+  font-family: "Lato Black", sans-serif;
+  font-size: 20px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #666d89;
+  margin-top: 71px;
+  letter-spacing: -0.85px;
+}
+
+.about__us__text {
+  font-family: "Lato Light" sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #767e9e;
+  margin-top: 27px;
+  word-spacing: -0.5px;
+  letter-spacing: -0.4px;
+}
+
+/* Team
+============================*/
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 44px;
   
 }
+
+.team__item {
+  width: 33.33333333%;
+  max-width: 300px;
+}
+
+.team__name {
+  font-family: 'Lato Black' sans-serif;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #666d89;
+  margin-top: 13.5px;
+  letter-spacing: -0.12em;
+}
+
+.team__text {
+font-family: 'Lato Regular' sans-serif;
+font-size: 12px;
+line-height: 21px;
+font-weight: 400;
+color: #767e9e;
+margin-top: 12px;
+letter-spacing: -0.27px ;
+
+}
+
+
