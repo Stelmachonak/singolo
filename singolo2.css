@@ -78,7 +78,7 @@ ul {
 
 
 .nav__list {
-  display: flex;
+  display:flex;
   list-style: none;
   margin-top: 10px;
   
@@ -97,8 +97,11 @@ a {
   color: #767e9e;
   border: 1px solid #767e9e;
   border-radius: 5px;
+
   padding: 3px 6px 3px 6px;
   margin-left: 1px;
+
+  padding: 3px 6px 3px 6px ;
   text-align: center;
   cursor: pointer;
 }
@@ -123,6 +126,7 @@ a:hover {
 /* About Us
 ============================*/
 
+
 .about__us {
   background-color: #f2f2f2;
   height: 728px;
@@ -135,8 +139,13 @@ a:hover {
   line-height: 15px;
   font-weight: 900;
   color: #666d89;
-  padding-top: 71px;
-  letter-spacing: -0.2px;
+  padding-top: 70px;
+  padding-left: 1px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #666d89;
+  letter-spacing: -0.4px;
+
 }
 
 .about__us__text {
@@ -146,8 +155,10 @@ a:hover {
   font-weight: 300;
   color: #767e9e;
   margin-top: 27px;
-  word-spacing: -0.4px;
-  letter-spacing: -0.3px;
+
+  word-spacing: -0.3px;
+  letter-spacing: -0.13px;
+
 }
 
 /* Team
@@ -158,6 +169,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 44px;
+
   
 }
 
@@ -176,21 +188,44 @@ a:hover {
   
 }
 
+  
+
+.team__item {
+  width: 33.33333333%;
+  max-width: 300px;
+}
+
+.team__name {
+  font-family: 'Lato Black' sans-serif;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #666d89;
+  margin-top: 14.5px;
+  letter-spacing: 0.1px ;
+}
+
+
 .team__text {
 font-family: 'Lato Regular' sans-serif;
 font-size: 12px;
 line-height: 21px;
 font-weight: 400;
 color: #767e9e;
-margin-top: 12px;
-letter-spacing: -0.27px ;
+margin-top: 13px;
+letter-spacing: -0.15px ;
+
 }
 
 .team__social {
   display: flex;
   justify-content: space-between;
-  max-width: 154px;
+  max-width: 155px;
   margin-top: 23px;
   cursor: pointer;
 }
+
+
+
+
 
