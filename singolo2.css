@@ -116,7 +116,10 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-height: 620px;
+  overflow: hidden;
 }
+
 
 .img__item {
  margin-top: 20px;
