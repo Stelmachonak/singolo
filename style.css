@@ -7,7 +7,7 @@ body {
 }
 
 *,
-*:befoe,
+*:before,
 *:after {
   box-sizing: border-box;
 }
@@ -56,7 +56,7 @@ ul {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 29px;
+  margin-top: 32px;
   letter-spacing: 0.1px;
 }
 
@@ -90,7 +90,7 @@ h1 {
   display: inline;
   position: relative;
   letter-spacing: -0.2px;
-  margin-right: 30px;
+  margin-right: 33px;
   cursor: pointer;
 }
 
@@ -128,7 +128,7 @@ h1 {
 ================================== */
 
 .slider {
-  height: 594px;
+  height: 600px;
   background-color: #f06c64;
   border-bottom: solid 6px #ea676b;
 }
@@ -157,7 +157,7 @@ h1 {
 .iphone__horizontal {
   width: 483px;
   height: 240px;
-  padding: 174px 0 0 98px;
+  margin: 174px 0 0 170px;
 }
 
 .right__arrow {
@@ -170,7 +170,7 @@ h1 {
 /* Our Services
 ================================== */
 .services {
-  height: 494px;
+  height: 500px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
 }
@@ -181,7 +181,7 @@ h1 {
   font-weight: 900;
   line-height: 17px;
   color: #666d89;
-  padding-top: 70px;
+  padding-top: 72px;
 }
 
 .services__text__logo {
@@ -192,38 +192,19 @@ h1 {
   font-weight: 300;
   margin-top: 28px;
   word-spacing: -0.3px;
+  height: 55px;
+  overflow: hidden;
 }
 
-.services__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.services__item {
-  width: 33.33333333%;
-}
-
-.services__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 46px;
-  margin-bottom: -45px;
-  margin-right: 40px;
-}
-
-.services__title {
+.services__item__title {
   font-family: "Lato Black" sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 17px;
   font-weight: 900;
   color: #666d89;
-  position: absolute;
-  margin: -17px 0 0 80px;
 }
 
-.services__text {
+.services__item__text {
   font-family: "Lato Regular" sans-serif;
   font-size: 12px;
   line-height: 21px;
@@ -233,109 +214,35 @@ h1 {
   max-width: 220px;
   max-height: 62px;
   overflow: hidden;
+  margin-top:11px;
 }
 
-.pen_text {
-  margin-top: 11px;
-  padding-left: 80px;
-  max-width: 220px;
-  max-height: 62px;
-  text-align: justify;
-}
-.bubl_icon {
-  margin-left: 7px;
+.services__item__first_line {
+  display: flex;
+  justify-content: space-between;
 }
 
-.buble_title {
-  padding-left: 7px;
-  letter-spacing: 0.7px;
-  word-spacing: -5px;
+.services__item {
+  display: flex;
+  margin-top: 47px;
 }
 
-.buble_text {
-  margin-top: 11px;
-  padding-left: 86.5px;
-  max-width: 220px;
-  max-height: 62px;
-  text-align: justify;
-  letter-spacing: -0.05px;
+.services__item__block {
+  margin-left: 21px;
 }
 
-.heart_icon {
-  margin-left: 14px;
+.services__item__second_line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -13px;
 }
 
-.heart_title {
-  padding-left: 15px;
-}
-
-.heart_text {
-  margin-top: 11px;
-  padding-left: 93px;
-  max-width: 220px;
-  max-height: 62px;
-  text-align: justify;
-  letter-spacing: -0.05px;
-}
-
-.phone_icon {
-  margin-top: -12px;
-}
-
-.phon_title {
-  letter-spacing: 0.3px;
-}
-
-.phone_text {
-  margin-top: 13px;
-  padding-left: 80px;
-  max-width: 220px;
-  max-height: 62px;
-  text-align: justify;
-}
-
-.bubble_icon {
-  padding-left: 7px;
-  margin-top: -12px;
-}
-
-.bubble_title {
-  padding-left: 7px;
-  letter-spacing: 0.7px;
-}
-
-.bubble_text {
-  margin-top: 13px;
-  padding-left: 87px;
-  max-width: 220px;
-  max-height: 62px;
-  text-align: justify;
-  word-spacing: -2px;
-  letter-spacing: 0.2px;
-}
-.star_icon {
-  padding-left: 15px;
-  margin-top: -12px;
-}
-
-.star_title {
-  padding-left: 15px;
-  letter-spacing: 0.2px;
-}
-
-.star_text {
-  margin-top: 13px;
-  padding-left: 92px;
-  max-width: 220px;
-  max-height: 62px;
-  text-align: justify;
-}
 /* Portfolio 
 ============================*/
 
 .portfolio {
   background-color: #2d303a;
-  height: 863px;
+  height: 869px;
   border-bottom: 6px solid #323746;
 }
 
@@ -353,7 +260,7 @@ h1 {
   font-weight: 900;
   color: #666d89;
   letter-spacing: 0.1px;
-  margin-top: 68px;
+  margin-top: 73px;
 }
 
 .portfolio__text {
@@ -372,7 +279,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin-top: 6px;
+  margin-top: 3px;
   max-width: 289px;
 }
 
@@ -423,7 +330,7 @@ h1 {
 
 .about__us {
   background-color: #f2f2f2;
-  height: 728px;
+  height: 734px;
   border-bottom: 6px solid #ffffff;
 }
 
@@ -450,6 +357,8 @@ h1 {
   margin-top: 27px;
   word-spacing: -0.8px;
   letter-spacing: -0.18px;
+  text-align: justify;
+  overflow: hidden;
 }
 
 /* Team
@@ -497,9 +406,6 @@ h1 {
 .social {
   display: flex;
 }
-.social_footer {
-  margin-right: -8px;
-}
 
 .social__item {
   display: flex;
@@ -509,7 +415,8 @@ h1 {
   height: 30px;
   border: 1px solid #666d89;
   border-radius: 50%;
-  margin-top: 24px;
+  margin-top: 26px;
+  margin-left: 2px;
   margin-right: 8px;
   transition: border 0.1s linear;
 }
@@ -538,7 +445,7 @@ h1 {
 
 .get__a__quote {
   background-color: #f06c64;
-  height: 648px;
+  height: 654px;
   border-bottom: 6px solid #ea676b;
 }
 
@@ -565,6 +472,8 @@ h1 {
   color: #f0d8d9;
   margin: 28px 0 45px 0;
   word-spacing: -1.2px;
+  height: 50px;
+  overflow: hidden;
 }
 
 /* Contacts form
@@ -581,12 +490,13 @@ h1 {
 }
 
 .contact__form__item input {
-  width: 617px;
-  height: 33.5px;
+  width: 619px;
+  height: 38px;
   background-color: #d6564f;
   border: 1px solid #d6564f;
   border-radius: 5px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .contact__form__item textarea {
@@ -594,8 +504,9 @@ h1 {
   border: 1px solid #d6564f;
   border-radius: 5px;
   resize: none;
-  width: 613px;
-  height: 191px;
+  width: 619px;
+  height: 202px;
+  margin-top: 8px;
   padding-top: 7px;
   letter-spacing: -1px;
   word-spacing: -3px;
@@ -629,7 +540,7 @@ h1 {
   color: #f0d8d9;
   letter-spacing: 0.15px;
   margin-left: -40px;
-  margin-top: -2px;
+  margin-top: 11px;
 }
 
 .form__text {
@@ -638,7 +549,7 @@ h1 {
   line-height: 22px;
   font-weight: 400;
   color: #f0d8d9;
-  margin-top: 11px;
+  margin-top: 8px;
   margin-left: -40px;
   letter-spacing: -0.2px;
   text-align: justify;
@@ -749,4 +660,9 @@ h1 {
   margin-left: 2px;
   letter-spacing: -0.1px;
   text-align: justify;
+}
+
+.social_footer {
+  margin-right: -7px;
+  margin-top: -3px;
 }
