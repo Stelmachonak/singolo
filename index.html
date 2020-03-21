@@ -196,7 +196,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio" id = "portfolio" >
       <div class="container">
         <div class="portfolio__inner">
           <div class="portfolio__header">
@@ -209,52 +209,28 @@
             </p>
           </div>
         </div>
-        <nav class="portfolio__nav">
-          <ul class="portfolio__nav__list">
-            <li class="portfolio__nav__list portfolio__nav__list_first"><a class="portfolio__nav__list_item" href="#">All</a></li>
-            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item" href="#">Web Design</a></li>
-            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item" href="#">Graphic Design</a></li>
-            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item" href="#">Artwork</a></li>
+        <nav class="portfolio__nav" id="portfolionav">
+          <ul class="portfolio__nav__list" >
+            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item active_element all" >All</a></li>
+            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item web_design">Web Design</a></li>
+            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item graphic_design" >Graphic Design</a></li>
+            <li class="portfolio__nav__list"><a class="portfolio__nav__list_item atwork" >Artwork</a></li>
           </ul>
         </nav>
         <div class="picture__slider">
-          <div class="img__item">
-            <img src="assets/img/portfolio/1.png" alt="1" />
+          <img class="img__item" src="assets/img/portfolio/1.png" alt="1"/>
+          <img class="img__item" src="assets/img/portfolio/2.png" alt="2" />
+          <img class="img__item" src="assets/img/portfolio/3.png" alt="3" />
+          <img class="img__item" src="assets/img/portfolio/4.png" alt="4" />
+          <img class="img__item" src="assets/img/portfolio/5.png" alt="5" />
+          <img class="img__item" src="assets/img/portfolio/6.png" alt="6" />
+          <img class="img__item" src="assets/img/portfolio/7.png" alt="7" />
+          <img class="img__item" src="assets/img/portfolio/8.png" alt="8" />
+          <img class="img__item" src="assets/img/portfolio/9.png" alt="9" />
+          <img class="img__item" src="assets/img/portfolio/10.png" alt="10" />
+          <img class="img__item" src="assets/img/portfolio/11.png" alt="11" />
+          <img class="img__item" src="assets/img/portfolio/12.png" alt="12" />
           </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/2.png" alt="2" />
-          </div>
-          <div class="img__item">
-            <img  src="assets/img/portfolio/3.png" alt="3" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/4.png" alt="4" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/5.png" alt="5" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/6.png" alt="6" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/7.png" alt="7" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/8.png" alt="8" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/9.png" alt="9" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/10.png" alt="10" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/11.png" alt="11" />
-          </div>
-          <div class="img__item">
-            <img src="assets/img/portfolio/12.png" alt="12" />
-          </div>
-        </div>
       </div>
     </div>
     <div class="about__us" id="about">
@@ -321,7 +297,7 @@
               </p>
             </div>
                 <div class="social">
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" target="_blank">
                     <svg class="social__icon">
                       <use xlink:href="#facebook"></use>
                     </svg>

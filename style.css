@@ -349,9 +349,13 @@ h1 {
   text-align: justify;
 }
 
-.portfolio__nav__list_first {
-  padding-left: 2px;
+.portfolio__nav__list_item.active {
+ 
+  color: #c5c5c5;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
 }
+
 
 .portfolio__nav__list_item:hover {
   color: #c5c5c5;
@@ -369,10 +373,13 @@ h1 {
 
 .img__item {
   margin-top: 20px;
-  margin-bottom: -3px;
+  width: 220px;
+  height: 187px;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
-.portfolio_border_imeges {
-  border: 5px solid #F06C64;
+.img__item.active {
+  border: 5px solid #f06c64;
 }
 
 /* About Us
