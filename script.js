@@ -1,5 +1,4 @@
 /* menu transition */
-
 const MENU = document.getElementById("menu");
 
 MENU.addEventListener("click", event => {
@@ -10,6 +9,32 @@ MENU.addEventListener("click", event => {
 });
 
 /* slider */
+
+const sliderContainer = document.querySelector(".slider_items");
+document
+  .querySelectorAll("[data-direction]")
+  .forEach(el => el.addEventListener("click", slide));
+
+function slide(e) {
+  const direction =
+    e.currentTarget.dataset.direction == "left" ? "right" : "left";
+  const activeSlide = document.querySelector(".slider__item.active");
+  const nextSlide = document.querySelector(".slider__item:not(.active)");
+  nextSlide.classList.add("active");
+  nextSlide.dataset.direction = e.currentTarget.dataset.direction;
+  console.log("slide -> e.target.dataset.direction", e.currentTarget);
+  nextSlide.ontransitionend = () => {
+    activeSlide.classList.remove("active");
+    sliderContainer.classList.remove("sliding");
+    nextSlide.ontransitionend = null;
+  };
+
+  setTimeout(() => {
+    sliderContainer.classList.add("sliding");
+    activeSlide.dataset.direction = direction;
+    nextSlide.dataset.direction = null;
+  }, 50);
+}
 
 /* phone screen on/off */
 
@@ -59,17 +84,16 @@ portfolioNav.addEventListener("click", event => {
     .querySelectorAll(".portfolio__nav__list_item")
     .forEach(el => el.classList.remove("active"));
   event.target.classList.add("active");
+  randomMix();
 });
 
-all.addEventListener("click", randomMix);
-web.addEventListener("click", randomMix);
-graphic.addEventListener("click", randomMix);
-atwork.addEventListener("click", randomMix);
-
-function randomMix(arr) {
+function randomMix() {
   for (let i = arrPortfoliopictures.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [arrPortfoliopictures[i], arrPortfoliopictures[j]] = [arrPortfoliopictures[j], arrPortfoliopictures[i]]; 
+    [arrPortfoliopictures[i], arrPortfoliopictures[j]] = [
+      arrPortfoliopictures[j],
+      arrPortfoliopictures[i]
+    ];
     pictureSlider.appendChild(arrPortfoliopictures[i]);
-}
+  }
 }

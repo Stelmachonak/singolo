@@ -67,7 +67,7 @@
       <div class="container">
         <div class="slider__inner">
           <div class="slider_items">
-             <div class="slider_1">
+             <div class="slider__item active" data-slide="1">
                   <div class="iphones">
                     <div class="iphone__vertical">
                       <img
@@ -83,22 +83,22 @@
                     </div>
                   </div>
              </div>
-             <!-- <div class="slider__item">
-                      <img class="slider_2" src="assets/img/slider/Slide-2.png" alt="slider-2" srcset="">
-             </div> -->
+             <div class="slider__item" data-slide="2">
+                  <img class="slider_2" src="assets/img/slider/Slide-2.png" alt="slider-2" srcset="">
+             </div>
           </div>
+        </div>
+        <div class="arrow left__arrow " data-direction="left">
+          <img
+          src="assets/img/slider/left_slider_icon.png" alt="prew"/>
+        </div>
+        <div class="arrow right__arrow" data-direction="right">
+          <img src="assets/img/slider/right_slider_icon.png" alt="next" />
         </div>
       </div>
       <div class="black_screen_vertical display_on"></div>  
       <div class="black_screen_horizontal display_on"></div>  
     </div>
-        <div class="left__arrow" >
-          <img
-          src="assets/img/slider/left_slider_icon.png" alt="prew"/>
-        </div>
-        <div class="right__arrow">
-          <img src="assets/img/slider/right_slider_icon.png" alt="next" />
-        </div>
     <div class="services" id="services">
       <div class="container">
         <div class="services__main__logo">
@@ -382,7 +382,6 @@
                     type="text"
                     placeholder="Name (Required)"
                     required
-                    pattern="[A-Za-z]"
                   />
                 </div>
                 <div class="contact__form__item">
