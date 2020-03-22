@@ -76,7 +76,6 @@ const all = document.querySelector(".all");
 const web = document.querySelector(".web_design");
 const graphic = document.querySelector(".graphic_design");
 const atwork = document.querySelector(".atwork");
-
 let arrPortfoliopictures = [].slice.call(portfolioPictures);
 
 portfolioNav.addEventListener("click", event => {
@@ -97,3 +96,41 @@ function randomMix() {
     pictureSlider.appendChild(arrPortfoliopictures[i]);
   }
 }
+
+/* Form submission */
+
+const closeButton = document.querySelector(".close__btn");
+const form = document.querySelector("form");
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  document.querySelector(".message__block").classList.remove("hidden");
+
+  let subject = form.elements.subject.value.toString();
+  if (subject == "") {
+    document.getElementById("result__theme").innerText = "Без темы";
+  } else {
+    if (subject.length > 40) {
+      console.log("subject.length", subject.length);
+      subject = subject.slice(0, 45) + "...";
+    }
+    document.getElementById("result__theme").innerText = `Тема: ${subject}`;
+  }
+  let description = form.elements.myTextarea.value.toString();
+  if (description == "") {
+    document.getElementById("result__description").innerText = "Без описания";
+  } else {
+    if (description.length > 40) {
+      description = description.slice(0, 40) + "...";
+    }
+    document.getElementById("result__description").innerText = `Описание: ${description}`;
+  }
+   form.elements.name.value = "";
+   form.elements.email.value = "";
+   form.elements.subject.value = "";
+   form.elements.myTextarea.value = "";
+});
+
+closeButton.addEventListener("click", () => {
+  document.querySelector(".message__block").classList.add("hidden");
+});

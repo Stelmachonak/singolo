@@ -82,6 +82,8 @@
                       />
                     </div>
                   </div>
+                    <div class="black_screen_vertical display_on"></div>  
+                    <div class="black_screen_horizontal display_on"></div>  
              </div>
              <div class="slider__item" data-slide="2">
                   <img class="slider_2" src="assets/img/slider/Slide-2.png" alt="slider-2" srcset="">
@@ -89,15 +91,13 @@
           </div>
         </div>
         <div class="arrow left__arrow " data-direction="left">
-          <img
-          src="assets/img/slider/left_slider_icon.png" alt="prew"/>
-        </div>
-        <div class="arrow right__arrow" data-direction="right">
-          <img src="assets/img/slider/right_slider_icon.png" alt="next" />
-        </div>
+            <img
+            src="assets/img/slider/left_slider_icon.png" alt="prew"/>
+          </div>
+          <div class="arrow right__arrow" data-direction="right">
+            <img src="assets/img/slider/right_slider_icon.png" alt="next" />
+          </div>
       </div>
-      <div class="black_screen_vertical display_on"></div>  
-      <div class="black_screen_horizontal display_on"></div>  
     </div>
     <div class="services" id="services">
       <div class="container">
@@ -374,12 +374,13 @@
             </div>
           </div>
           <div class="form__inner">
-            <form action="/" method="post">
+            <form action="" method="post" id = "form" >
               <div class="contact__form">
                 <div class="contact__form__item">
                   <input
                     class="placeholder__text"
                     type="text"
+                    name="name"
                     placeholder="Name (Required)"
                     required
                   />
@@ -388,8 +389,7 @@
                   <input
                     class="placeholder__text"
                     type="email"
-                    name="#"
-                    id="#"
+                    name="email"
                     placeholder="Email (Required)"
                     required
                   />
@@ -399,12 +399,13 @@
                     class="placeholder__text"
                     type="text"
                     placeholder="Subject"
+                    name="subject"
                   />
                 </div>
                 <div class="contact__form__item">
                   <textarea
                     class="placeholder__text"
-                    name=""
+                    name="myTextarea"
                     id=""
                     cols="15"
                     rows="10"
@@ -495,6 +496,16 @@
             </div>
           </div>
         </footer>
+        <div class="message__block hidden">
+          <div class="container">
+            <div class="message">
+              <h3 class="message__header">Письмо отправлено</h3>   
+                <p class="theme"><span id="result__theme">Без темы</span></p>
+                <p class="description"><span id="result__description">Без описания</span></p>
+                <button class="close__btn">OK</button>
+            </div>
+          </div>
+          </div>
         <script src="script.js"></script>
   </body>
 </html>
