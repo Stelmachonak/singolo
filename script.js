@@ -110,9 +110,9 @@ form.addEventListener("submit", e => {
   if (subject == "") {
     document.getElementById("result__theme").innerText = "Без темы";
   } else {
-    if (subject.length > 40) {
+    if (subject.length > 30) {
       console.log("subject.length", subject.length);
-      subject = subject.slice(0, 45) + "...";
+      subject = subject.slice(0, 30) + "...";
     }
     document.getElementById("result__theme").innerText = `Тема: ${subject}`;
   }
@@ -120,8 +120,8 @@ form.addEventListener("submit", e => {
   if (description == "") {
     document.getElementById("result__description").innerText = "Без описания";
   } else {
-    if (description.length > 40) {
-      description = description.slice(0, 40) + "...";
+    if (description.length > 30) {
+      description = description.slice(0, 30) + "...";
     }
     document.getElementById("result__description").innerText = `Описание: ${description}`;
   }
